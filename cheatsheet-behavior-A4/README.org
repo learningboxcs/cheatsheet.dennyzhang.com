@@ -30,6 +30,7 @@ File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues
 |   1 | [[https://www.amazon.jobs/en/principles][Link: Amazon 14 Leadership Principles]] |
 |   2 | [[https://jobs.netflix.com/culture][Link: Netflix Culture]]                 |
 |   3 | [[https://www.facebook.com/pg/facebookcareers/photos/?tab=album&album_id=1655178611435493][Link: Facebook's 5 Core Values]]        |
+|-----+---------------------------------------|
 |   4 | [[https://blogs.vmware.com/cfo/epic2-vmware-values/][Link: VMware EPIC2 values]]             |
 #+TBLFM: $1=@-1$1+1;N
 ** Top 15 Behavior Questions
@@ -498,3 +499,97 @@ What's the role of team lead
 - Avoid holding too much ego
 - Be sharp yet emphathy
 - Keep practical
+* amazon BQ                                                        :noexport:
+
+** Tell me about yourself/ Tell me about your background
+
+** Why Amazon
+
+** Why this position
+
+** Why leaving your current company
+
+** Your strength
+
+** Your weakness
+
+** Tell me about a project that your most proud of
+
+** Tell me about the most challenging project you worked on
+
+** Tell me about a project that you had failed
+
+** Tell me about a time you took risk and succeed/failed
+
+** Tell me about a time you have to change the status quo
+
+** Tell me about a time you had to deal with tight deadline and you were able/not able to meet the target
+
+** Tell me about a time you had conflict with your manager/peer/colleagues
+
+** Tell me about a time you come up with a simple solution to a complex problem
+
+** Tell me about a time you come up with a new approach to an old problem
+
+** Tell me about a time you received negative feedback from your manager
+
+** Tell me about a time you made a decision without your manager’s approval
+
+** Tell me about a time you had to make a decision when there is not enough data or information
+
+** Tell me about a time you were assigned a project with unclear responsibility
+
+** Tell me about a time you had to sacrifice short term gains for the long term goals
+
+** Tell me about a time you were 50%/75% on a project and found you have made a mistake and have to change direction
+
+** Tell me about a time you came up with a solution that customer didn’t ask and they end up like it
+
+** Tell me about a time that customer tell you they want something but you know that’s not really what they want
+
+** Tell me about a time you had to convince the team/convinced by the team
+
+** Tell me about a project that you have to overcome big obstacle
+
+** Tell me about an experience that you have to earn trust/gain buy-in from another group
+
+** Tell me about a time you step outside of your job scope and solved a problem
+
+** What is your proudest/biggest innovation
+
+** How do you select metric to measure your project success
+
+** Have you ever learn something new by yourself and end up using what you learn to solve problems at work
+
+** If you have conflicting goals, how do you make trad-off
+
+** Tell me about a time you have to seek outside help to dive deep on a problem to find the solution
+
+** Tell me about a time you decided to take on a project instead of being assigned to you
+* Negogiate for the compensation                                   :noexport:
+https://medium.com/@bayareabelletrist/how-i-negotiated-a-software-engineer-offer-in-silicon-valley-f11590f5c656
+
+- When I counter-offered, I never used solid numbers — I gave ranges.
+
+#+BEGIN_EXAMPLE
+Recruiter: So, what do you think?
+
+You: That’s an interesting offer. I think it’s probably in the
+ballpark, but it’s not something I’m going to sign right now. I’m
+going to wait until I hear back from the other places I’m speaking to.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Me: Hey, I finally heard back from Baz LLC. Their offer came in a lot
+higher than I was expecting. They offered $150,000 in base, $200,000
+in stock, and $40,000 in signing. That being said I think the work
+FooCorp aligns more closely with my interests, so I’d really like to
+make something work with you guys. Can we do what we can to get to
+those numbers? I’d love to figure this out.
+
+FooCorp: Wow, that’s a good offer. Keep in mind FooCorp is {making the
+world a better place / has amazing potential / is better for your
+career} and I would hope you wouldn’t be deciding based on a
+paycheck. I don’t know if we can match that offer exactly, but I’ll
+see what we can do.
+#+END_EXAMPLE

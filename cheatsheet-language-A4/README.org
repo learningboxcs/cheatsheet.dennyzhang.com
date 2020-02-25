@@ -27,11 +27,16 @@ File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues
 | Java JDK Source Code | [[https://github.com/openjdk-mirror/jdk7u-jdk/tree/master/src/share/classes/java/util][Github: jdk7u-jdk]]                |
 | Golang Source Code   | [[https://github.com/golang/go/tree/master/src/runtime][Github: go]]                       |
 | Python Source Code   | [[https://github.com/python/cpython][Github: cpython]]                  |
-| Redis Source Code    | [[https://github.com/antirez/redis/tree/unstable/src][Github: redis]]                    |
-| MySQL                |                                  |
-| Postgres             |                                  |
 | Git Source Code      | [[https://github.com/git/git][Github: git]]                      |
 | Reference            | [[http://tutorials.jenkov.com/java-util-concurrent/index.html][Link: Java Concurrency Utilities]] |
+** Middleware & DB
+| Name              | Summary       |
+|-------------------+---------------|
+| Redis Source Code | [[https://github.com/antirez/redis/tree/unstable/src][Github: redis]] |
+| MySQL             |               |
+| Postgres          |               |
+| Kafaka            |               |
+| Spark             |               |
 ** Community Design Proposals
 | Name                        | Summary                                  |
 |-----------------------------+------------------------------------------|
@@ -50,8 +55,8 @@ File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues
 | Concurrent Hash Map                         |                                                             |
 | Sorted Map, Treemap                         |                                                             |
 | Semophore                                   | [[https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/util/concurrent/Semaphore.java][Github: jdk7u-jdk/.../concurrent/Semaphore.java]]             |
-| Golang channels                             |                                                             |
 |---------------------------------------------+-------------------------------------------------------------|
+| How Golang channel feature is implement?    |                                                             |
 | Binary index tree                           |                                                             |
 | API Rate Limiter                            |                                                             |
 | Skiplist                                    |                                                             |

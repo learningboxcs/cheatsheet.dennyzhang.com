@@ -98,6 +98,11 @@ About swap memory:
 [[image-blog:SRE: Linux Basic Concepts][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-sre-A4/page-fault.png]]
 
 [[https://en.wikipedia.org/wiki/Page_fault][Wikipedia: Page fault]]
+
+** HALF epoll VS poll VS select
+Use case: detect new I/O events from many FDs
+
+[[https://leetcode.com/discuss/interview-question/operating-system/129663/What-is-the-difference-between-poll-epoll-and-select][Link: What is the difference between poll, epoll and select?]]
 ** TODO Explain how OS schedules processes
 - Process Scheduling: determine which process is in the ready state, and should be moved to the running state
 
@@ -107,93 +112,18 @@ Process context switch:
 - Store process context to process table
 - Load the process context of new scheduld process
 - Pass the control to kernel
-
-** TODO Explain the output of vmstat command
-st: time stolen from this vm by the hypervisor
-
-#+BEGIN_EXAMPLE
-[ec2-user@ip-172-31-17-39 ~]$ vmstat
-procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
- r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
- 0  0      0  89348  37988 302376    0    0     8    25   25   64  4  1 95  0  0
-#+END_EXAMPLE
-
-man vmstat
-#+BEGIN_EXAMPLE
-FIELD DESCRIPTION FOR VM MODE
-   Procs
-       r: The number of runnable processes (running or waiting for run time).
-       b: The number of processes in uninterruptible sleep.
-
-   Memory
-       swpd: the amount of virtual memory used.
-       free: the amount of idle memory.
-       buff: the amount of memory used as buffers.
-       cache: the amount of memory used as cache.
-       inact: the amount of inactive memory.  (-a option)
-       active: the amount of active memory.  (-a option)
-
-   Swap
-       si: Amount of memory swapped in from disk (/s).
-       so: Amount of memory swapped to disk (/s).
-
-   IO
-       bi: Blocks received from a block device (blocks/s).
-       bo: Blocks sent to a block device (blocks/s).
-
-   System
-       in: The number of interrupts per second, including the clock.
-       cs: The number of context switches per second.
-
-   CPU
-       These are percentages of total CPU time.
-       us: Time spent running non-kernel code.  (user time, including nice time)
-       sy: Time spent running kernel code.  (system time)
-       id: Time spent idle.  Prior to Linux 2.5.41, this includes IO-wait time.
-       wa: Time spent waiting for IO.  Prior to Linux 2.5.41, included in idle.
-       st: Time stolen from a virtual machine.  Prior to Linux 2.6.11, unknown.
-
-FIELD DESCRIPTION FOR DISK MODE
-   Reads
-       total: Total reads completed successfully
-       merged: grouped reads (resulting in one I/O)
-       sectors: Sectors read successfully
-       ms: milliseconds spent reading
-   Writes
-       total: Total writes completed successfully
-       merged: grouped writes (resulting in one I/O)
-       sectors: Sectors written successfully
-       merged: grouped writes (resulting in one I/O)
-       sectors: Sectors written successfully
-       ms: milliseconds spent writing
-
-   IO
-       cur: I/O in progress
-       s: seconds spent for I/O
-
-FIELD DESCRIPTION FOR DISK PARTITION MODE
-       reads: Total number of reads issued to this partition
-       read sectors: Total read sectors for partition
-       writes : Total number of writes issued to this partition
-       requested writes: Total number of write requests made for partition
-
-FIELD DESCRIPTION FOR SLAB MODE
-       cache: Cache name
-       num: Number of currently active objects
-       total: Total number of available objects
-       size: Size of each object
-       pages: Number of pages with at least one active object
-#+END_EXAMPLE
-** TODO epoll VS poll VS select
-Use case: detect new I/O events from many FDs
-
-[[https://leetcode.com/discuss/interview-question/operating-system/129663/What-is-the-difference-between-poll-epoll-and-select][Link: What is the difference between poll, epoll and select?]]
 ** TODO Explain spinlock
 https://en.wikipedia.org/wiki/Spinlock
 
 Use case: Busy waiting is a good idea when you know the wait is not too long. Spinlock can help your process keep busy waiting.
-** HALF Explain What RAID is? And how to choose RAID level?
+** TODO Explain RAID
+*** What RAID is?
+*** How to choose RAID level?
 ** TODO Explain the general file system hierarchy of a Linux system
 [[image-blog:SRE: Linux Basic Concepts][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-sre-A4/layeredfilesystem.jpg]]
 
 [[https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/12_FileSystemImplementation.html][Link: File-System Implementation]]
+** TODO Explain signal
+*** Signal can't be trapped: SIGKILL, SIGSTOP
+*** How to log all signals
+auditd or systemtap
